@@ -1082,6 +1082,7 @@ footer ul li:last-of-type a{
 
 .section-9 .section-9-content .section-9-text{
     width: 50%;
+    padding-right: 3rem;
 }
 
 .section-9 .section-9-content .section-9-text h2{
@@ -1162,6 +1163,7 @@ footer ul li:last-of-type a{
         width: 90%;
         margin: auto;
         padding-bottom: 3rem;
+        padding-right: 0;
     }
 
     .section-9 .section-9-content .section-9-text p:first-of-type{
