@@ -101,6 +101,7 @@ footer ul li:last-of-type a{
         flex-direction: column;
         background: var(--rojo);
         width: 100%;
+        z-index: 999;
         text-align: center;
         transition: 0.3s;
         box-shadow:
@@ -1345,7 +1346,7 @@ footer ul li:last-of-type a{
 .btnVolverArriba, .btnWhatsApp{
     display: none;
     position: fixed;
-    bottom: 20%; 
+    bottom: 15%; 
     right: 20px; 
     transform: translateY(-50%); 
     background: var(--rojo);
