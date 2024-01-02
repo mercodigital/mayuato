@@ -92,6 +92,12 @@ footer ul li:last-of-type a{
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 1275px) {
+    .nav-item, footer ul li{
+        margin-left: 1.6rem;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     .nav-menu {
         position: fixed;
@@ -134,6 +140,7 @@ footer ul li:last-of-type a{
 
     .nav-item {
         margin: 2rem 0;
+        margin-left: 0;
     }
 
     .hamburger {
@@ -156,20 +163,16 @@ footer ul li:last-of-type a{
     }
 }
 
-@media only screen and (max-width: 1275px) {
-    .nav-item, footer ul li{
-        margin-left: 1.6rem;
-    }
-}
-
                                                 /* BANNER */
 
 .banner{
     background: var(--azul);
     width: 100%;
+    min-height: 100vh;
     padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .banner img{
     width: 60%;
@@ -818,8 +821,8 @@ footer ul li:last-of-type a{
 
 .slide-track{
     display: flex;
-    width: calc(244px * 24);
-    animation: scroll 40s linear infinite;
+    width: calc(244px * 58);
+    animation: scroll 80s linear infinite;
 }
 
 .slide-track:hover{
@@ -850,7 +853,7 @@ footer ul li:last-of-type a{
     }
 
     100%{
-        transform: translateX(calc(-244px * 12));
+        transform: translateX(calc(-244px * 29));
     }
 }
 
