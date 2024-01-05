@@ -166,7 +166,10 @@ footer ul li:last-of-type a{
                                                 /* BANNER */
 
 .banner{
-    background: var(--azul);
+    background-image: url(images/HERO/banner_desktop_mayuato.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     width: 100%;
     min-height: 100vh;
     padding-bottom: 5rem;
@@ -174,17 +177,11 @@ footer ul li:last-of-type a{
     flex-direction: column;
 }
 
-.banner img{
-    width: 60%;
-    margin: auto;
-    display: block;
-}
-
 .banner h1{
     color: white;
     text-align: center;
     font-size: 4rem;
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
@@ -216,8 +213,14 @@ footer ul li:last-of-type a{
     background: #aa1015;
 }
 
+@media screen and (min-width: 1600px){
+    .banner h1{
+        font-size: 6rem;
+    }
+}
+
 @media screen and (max-width: 1023px){
-    .banner img, .banner h1{
+    .banner h1{
         width: 90%;
     }
 }
@@ -237,6 +240,8 @@ footer ul li:last-of-type a{
 
     .banner{
         padding-bottom: 2rem;
+        background-image: url(images/HERO/banner_mobile_mayuato.webp);
+        background-position: bottom;
     }
 
     .banner button{
