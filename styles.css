@@ -40,6 +40,10 @@ a {
     padding: 2rem 1.5rem;
 }
 
+footer{
+    border-top: 1px solid #E2E8F0;
+}
+
 .hamburger {
     display: none;
 }
@@ -193,7 +197,7 @@ footer ul li:last-of-type a{
     color: white;
     border: none;
     padding: 1rem 5rem;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: auto;
     margin-top: 1rem;
     display: block;
@@ -255,6 +259,7 @@ footer ul li:last-of-type a{
 .section-1 .section-1-content{
     display: flex;
     align-items: center;
+    margin: 3rem 0;
 }
 
 .section-1 .section-1-content img{
@@ -282,7 +287,7 @@ footer ul li:last-of-type a{
     color: white;
     border: none;
     padding: 1rem 5rem;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -316,6 +321,7 @@ footer ul li:last-of-type a{
 @media screen and (max-width: 1023px){
     .section-1 .section-1-content{
         flex-direction: column-reverse;
+        margin: 1rem 0;
     }
 
     .section-1 .section-1-content .section-1-text p{
@@ -1319,6 +1325,145 @@ footer ul li:last-of-type a{
 
 }
 
+                                            /* SECCIÓN 11 */
+
+.section-11 .section-11-content{
+    padding: 5rem 5%;
+}
+
+.section-11 .section-11-content .section-11-text h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+.section-11 .section-11-content .section-11-text h2 span{
+    color: var(--rojo);
+}
+
+.section-11 .section-11-content .section-11-images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.section-11 .section-11-content .section-11-images a{
+    width: 15%;
+}
+
+.section-11 .section-11-content .section-11-images a img{
+    width: 100%;
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.4)); 
+
+}
+
+.section-11 .section-11-content .section-11-images a:first-of-type img:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-5px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(6px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-8px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(8px, 0, 0);
+    }
+  }
+
+.section-11 .section-11-content .section-11-images a:nth-child(2) img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-11 .section-11-content .section-11-images a:nth-child(2) img:hover {
+    animation: bounce .6s ease-in-out;
+}
+  
+@keyframes bounce {
+    0%, 
+    20%,
+    60%,
+    100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    80%{
+        transform: translateY(-15px);
+    }
+}
+
+.section-11 .section-11-content .section-11-images a:nth-child(3) img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-11 .section-11-content .section-11-images a:nth-child(3) img:hover{
+    animation: deform 0.5s ease-in-out forwards, rebound 0.5s ease-in-out forwards;
+
+}
+
+@keyframes deform {
+    50% {
+      transform: scaleY(0.1);
+    }
+}
+  
+@keyframes rebound {
+    50% {
+      transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section-11 .section-11-content .section-11-text h2{
+        font-size: 2rem;
+    }
+
+    .section-11 .section-11-content{
+        padding: 2rem 5%;
+    }
+
+    .section-11 .section-11-content .section-11-images{
+        margin-top: 3rem;
+    }
+
+    .section-11 .section-11-content .section-11-images a{
+        width: 30%;
+        text-align: center;
+    }
+
+    .section-11 .section-11-content .section-11-images a img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .section-11 .section-11-content .section-11-text h2{
+        font-size: 1.5rem;
+    }
+
+    .section-11 .section-11-content .section-11-images a{
+        width: 90%;
+        text-align: center;
+    }
+
+    .section-11 .section-11-content .section-11-images a img{
+        width: 80%;
+    }
+}
+
                                         /* FOOTER (AJUSTES) */
 
 @media screen and (max-width: 1023px) {
@@ -1372,5 +1517,5 @@ footer ul li:last-of-type a{
 .btnWhatsApp{
     bottom: 5%;
     display: block;
-    background: #45bd53;
+    background: #29A71A;
 }

@@ -96,7 +96,8 @@ let infiniteScroll = () => {
 };
 
 let autoPlay = () => {
-  if (window.innerWidth < 800 || !isAutoPlay) return; 
+  // if (window.innerWidth < 800 || !isAutoPlay) return; 
+  if (!isAutoPlay) return; 
 
   timeoutId = setTimeout(() => {
     carousel.scrollLeft += cardWidth;
@@ -165,3 +166,17 @@ btnVolverArriba.onclick = function() {
 btnWhatsApp.addEventListener("click", function(){
   open("https://wa.me/+5491166112112");
 })
+
+                                                /* CALL TO ACTION */
+
+var cta = document.querySelectorAll('.cta');
+
+cta.forEach(function(boton) {
+  boton.addEventListener('click', function() {
+    var targetElement = document.getElementById('contacto');
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
