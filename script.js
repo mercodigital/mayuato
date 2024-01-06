@@ -101,7 +101,7 @@ let autoPlay = () => {
 
   timeoutId = setTimeout(() => {
     carousel.scrollLeft += cardWidth;
-  }, 2500);
+  }, 3000);
 };
 
 autoPlay();
