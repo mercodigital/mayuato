@@ -50,11 +50,27 @@ carouselChildren.slice(0, cardsPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
+// btns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     carousel.scrollLeft += btn.id == "left" ? -cardWidth : cardWidth;
+//   });
+// });
+
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    carousel.scrollLeft += btn.id == "left" ? -cardWidth : cardWidth;
+    const currentIndex = Math.round(carousel.scrollLeft / cardWidth);
+    const targetIndex = btn.id === "left" ? currentIndex - 1 : currentIndex + 1;
+    const targetScroll = targetIndex * cardWidth;
+
+    carousel.scrollTo({
+      left: targetScroll,
+      behavior: "smooth" // Agregar suavidad al desplazamiento
+    });
+
+    autoPlay(); // Reiniciar la reproducción automática después del desplazamiento
   });
 });
+
 
 let dragStart = (e) => {
   isDragging = true;
