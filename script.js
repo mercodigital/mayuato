@@ -164,7 +164,7 @@ btnVolverArriba.onclick = function() {
 };
 
 btnWhatsApp.addEventListener("click", function(){
-  open("https://wa.me/+5491166112112");
+  open("https://wa.me/+5491169997300");
 })
 
                                                 /* CALL TO ACTION */
