@@ -424,6 +424,14 @@ footer ul li:last-of-type a{
     }
 }
 
+@media screen and (max-width: 480px){
+
+    .section-2 .section-2-content button{
+        padding: 1rem 2.5rem;
+    }
+
+}
+
                                                 /* SECCIÓN 3 */
 
 .section-3{
@@ -580,6 +588,10 @@ footer ul li:last-of-type a{
 @media screen and (max-width: 480px){
     .section-3 .section-3-content .section-3-text h2{
         font-size: 2rem;
+    }
+
+    .section-3 .section-3-content button{
+        padding: 1rem 2.5rem;
     }
 } 
 
@@ -1097,6 +1109,12 @@ footer ul li:last-of-type a{
         resize: vertical;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .section-8 .section-8-content .section-8-text h2{
+        font-size: 3rem;
+    }
 }
 
                                             /* SECCIÓN 9 */
