@@ -1554,3 +1554,62 @@ footer ul li:last-of-type a{
     display: block;
     background: #29A71A;
 }
+
+                                                /* Gracias */
+
+.gracias{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.gracias .gracias-content{
+    width: fit-content;
+    text-align: center;
+    padding: 1rem;
+}
+
+.gracias .gracias-content i{
+    font-size: 250px;
+}
+
+.gracias .gracias-content h1{
+    font-size: 4rem;
+    color: var(--rojo);
+    margin: 2rem 2rem;
+}
+
+.gracias .gracias-content p{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.gracias .gracias-content a{
+    background: var(--azul);
+    color: white;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+.gracias .gracias-content a:hover{
+    background: #1b2a61;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width: 750px) {
+    .gracias .gracias-content i{
+        font-size: 200px;
+    }
+    
+    .gracias .gracias-content h1{
+        font-size: 3rem;
+    }
+    
+    .gracias .gracias-content p{
+        font-size: 1.2rem;
+    }
+}
