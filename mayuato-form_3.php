@@ -6,8 +6,10 @@ header("Access-Control-Allow-Methods: POST");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+    $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
     $telefono = $_POST['telefono'];
+    $mensaje = $_POST['mensaje'];
 
     require 'vendor/autoload.php';
 
@@ -26,12 +28,14 @@ use PHPMailer\PHPMailer\Exception;
         $mail->setFrom('enviadosdemails@gmail.com', 'Mailer');
         $mail->addAddress('tortitanegra74@gmail.com', 'Mayuato');     
 
-        $contenidoCorreo = "<b>Correo electrónico:</b> $correo <br/>" .  
-        "<b>Teléfono:</b> $telefono";
+        $contenidoCorreo = "<b>Nombre:</b> $nombre <br/>" .  
+        "<b>Correo electrónico:</b> $correo <br/>" .  
+        "<b>Teléfono:</b> $telefono <br/>" . 
+        "<b>Mensaje:</b> $mensaje";
 
         $mail->isHTML(true); 
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'Landing page | Formulario 1';
+        $mail->Subject = 'Landing page | Formulario 3';
         $mail->Body = $contenidoCorreo;
 
         $mail->send();

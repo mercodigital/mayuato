@@ -7,7 +7,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
     $correo = $_POST['correo'];
-    $telefono = $_POST['telefono'];
+    $mensaje = $_POST['mensaje'];
+    $cv = $_FILES['cv']['name'];
+    $rutaArchivo = $_FILES['cv']['tmp_name'];
 
     require 'vendor/autoload.php';
 
@@ -27,11 +29,15 @@ use PHPMailer\PHPMailer\Exception;
         $mail->addAddress('tortitanegra74@gmail.com', 'Mayuato');     
 
         $contenidoCorreo = "<b>Correo electrónico:</b> $correo <br/>" .  
-        "<b>Teléfono:</b> $telefono";
+        "<b>Mensaje:</b> $mensaje";
+
+        if (!empty($cv) && !empty($rutaArchivo)) {
+            $mail->addAttachment($rutaArchivo, $cv);
+        }
 
         $mail->isHTML(true); 
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'Landing page | Formulario 1';
+        $mail->Subject = 'Landing page | Formulario 2';
         $mail->Body = $contenidoCorreo;
 
         $mail->send();

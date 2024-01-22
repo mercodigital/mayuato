@@ -181,7 +181,7 @@ cta.forEach(function(boton) {
   });
 });
 
-                                                /* FORMULARIOS */
+                                                /* FORMULARIO 1 */
 
 document.getElementById('formulario1').addEventListener('submit', function(event) {
     event.preventDefault(); 
@@ -202,4 +202,50 @@ document.getElementById('formulario1').addEventListener('submit', function(event
 .catch(error => {
         console.error('Error:', error);
     });
+});
+
+                                                /* FORMULARIO 2 */
+
+document.getElementById('formulario2').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+                                                                                        
+  let formData = new FormData(this);
+  fetch('https://mkt.partners/mayuato-form_2.php', {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+        open("https://mayuato.netlify.app/gracias.html");
+        this.reset();
+    } else {
+      console.error('Error en la petición');
+  }
+})
+.catch(error => {
+      console.error('Error:', error);
+  });
+});
+
+                                              /* FORMULARIO 3 */
+
+document.getElementById('formulario3').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+                                                                                        
+  let formData = new FormData(this);
+  fetch('https://mkt.partners/mayuato-form_3.php', {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+        open("https://mayuato.netlify.app/gracias.html");
+        this.reset();
+    } else {
+      console.error('Error en la petición');
+  }
+})
+.catch(error => {
+      console.error('Error:', error);
+  });
 });
