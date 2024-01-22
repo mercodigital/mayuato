@@ -193,8 +193,8 @@ document.getElementById('formulario1').addEventListener('submit', function(event
     })
     .then(response => {
       if (response.ok) {
-          open("https://mayuato.netlify.app/gracias.html");
-          this.reset();
+        window.location.href = "https://mayuato.netlify.app/gracias.html";
+        this.reset();
       } else {
         console.error('Error en la petición');
     }
@@ -216,8 +216,8 @@ document.getElementById('formulario2').addEventListener('submit', function(event
   })
   .then(response => {
     if (response.ok) {
-        open("https://mayuato.netlify.app/gracias.html");
-        this.reset();
+      window.location.href = "https://mayuato.netlify.app/gracias.html";
+      this.reset();
     } else {
       console.error('Error en la petición');
   }
@@ -239,8 +239,8 @@ document.getElementById('formulario3').addEventListener('submit', function(event
   })
   .then(response => {
     if (response.ok) {
-        open("https://mayuato.netlify.app/gracias.html");
-        this.reset();
+      window.location.href = "https://mayuato.netlify.app/gracias.html";
+      this.reset();
     } else {
       console.error('Error en la petición');
   }
