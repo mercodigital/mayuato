@@ -183,7 +183,7 @@ cta.forEach(function(boton) {
 
                                                 /* FORMULARIOS */
 
-document.querySelectorAll('formulario').addEventListener('submit', function(event) {
+document.getElementById('formulario1').addEventListener('submit', function(event) {
     event.preventDefault(); 
                                                                                           
     let formData = new FormData(this);
