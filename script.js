@@ -180,3 +180,26 @@ cta.forEach(function(boton) {
     }
   });
 });
+
+                                                /* FORMULARIOS */
+
+document.querySelectorAll('formulario').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+                                                                                          
+    let formData = new FormData(this);
+    fetch('https://mkt.partners/mayuato-form_1.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+          open("https://mayuato.netlify.app/gracias.html");
+          this.reset();
+      } else {
+        console.error('Error en la petición');
+    }
+})
+.catch(error => {
+        console.error('Error:', error);
+    });
+});
