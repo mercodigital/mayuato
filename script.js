@@ -239,7 +239,7 @@ document.getElementById('formulario3').addEventListener('submit', function(event
   })
   .then(response => {
     if (response.ok) {
-      window.location.href = "https://mayuato.netlify.app/gracias.html";
+      window.location.href = "https://mayoristamayuato.com/gracias.html";
       this.reset();
     } else {
       console.error('Error en la petición');
