@@ -502,7 +502,7 @@ footer ul li:last-of-type a{
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
   gap: 16px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
@@ -537,22 +537,29 @@ footer ul li:last-of-type a{
   cursor: grab;
 }
 
-#card-1, #card-4{
-    background-image: url(images/Ofertas/productos_01.png);
+#card-1, #card-5{
+    background-image: url(images/Ofertas/1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#card-2, #card-5{
-    background-image: url(images/Ofertas/productos_02.png);
+#card-2, #card-6{
+    background-image: url(images/Ofertas/2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#card-3, #card-6{
-    background-image: url(images/Ofertas/productos_03.png);
+#card-3, #card-7{
+    background-image: url(images/Ofertas/3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#card-4, #card-8{
+    background-image: url(images/Ofertas/4.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
