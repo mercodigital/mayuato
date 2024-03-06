@@ -532,6 +532,12 @@ footer ul li:last-of-type a{
   flex-direction: column;
 }
 
+.wrapper .carousel .card:hover{
+    height: 600px;
+    transition-property: height;
+    transition-duration: .7s;
+}
+
 .wrapper .carousel.dragging .card {
   user-select: none;
   cursor: grab;
