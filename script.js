@@ -169,6 +169,14 @@ btnWhatsApp.addEventListener("click", function(){
 
                                                 /* CALL TO ACTION */
 
+var ctaWsp = document.getElementById('cta-wsp');
+
+
+ctaWsp.addEventListener('click', function() {
+    open("https://wa.me/+5491169997300");
+});
+
+
 var cta = document.querySelectorAll('.cta');
 
 cta.forEach(function(boton) {
