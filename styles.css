@@ -507,6 +507,7 @@ footer ul li:last-of-type a{
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  height: 600px;
 }
 
 .wrapper .carousel.no-transition {
@@ -536,6 +537,11 @@ footer ul li:last-of-type a{
     height: 600px;
     transition-property: height;
     transition-duration: 1s;
+}
+
+.wrapper .carousel .card:not(:hover){
+    transition-property: height;
+    transition-duration: .5s;
 }
 
 .wrapper .carousel.dragging .card {
@@ -583,6 +589,20 @@ footer ul li:last-of-type a{
   }
 }
 
+@media screen and (min-width: 1440px) {
+    .wrapper .carousel .card {
+        height: 600px;
+    }
+
+    .wrapper .carousel .card:hover{
+        height: 700px;
+    }
+
+    .wrapper .carousel {
+        height: 700px;
+      }
+}
+
 @media screen and (max-width: 1023px) {
     .section-3 .section-3-content .section-3-text{
         width: 90%;
@@ -595,6 +615,21 @@ footer ul li:last-of-type a{
 
     .section-3 .section-3-content button{
         margin-top: 1rem;
+    }
+
+    .wrapper .carousel .card:hover{
+        height: 500px;
+        transition-property: none;
+        transition-duration: 0;
+    }
+    
+    .wrapper .carousel .card:not(:hover){
+        transition-property: none;
+        transition-duration: 0;
+    }
+
+    .wrapper .carousel {
+        height: 100%;
     }
 }
 
