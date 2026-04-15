@@ -164,7 +164,7 @@ btnVolverArriba.onclick = function() {
 };
 
 btnWhatsApp.addEventListener("click", function(){
-  open("https://wa.me/+5491169997300");
+  open("https://wa.me/5491140913500");
 })
 
                                                 /* CALL TO ACTION */
@@ -173,7 +173,7 @@ var ctaWsp = document.getElementById('cta-wsp');
 
 
 ctaWsp.addEventListener('click', function() {
-    open("https://wa.me/+5491169997300");
+    open("https://wa.me/5491140913500");
 });
 
 
